@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script defer src="game.js"></script>
+    <title>Adjacent Tiles game</title>
+</head>
+<body>
+    <div id="panel">
+        <div id="settings">
+            <div>
+                <span>Board Size</span>
+                <select>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <button id="reset" title="Click to reset board">&#x21BB;</button>
+        </div>
+        <div># Moves: <span id="moves"></span></div>
+    </div>
+    
+    <table>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="dimlight"></div>
+    <div id="prompt">
+        <p>
+            Success! Solved in <span></span> move(s).
+        </p>
+        <p>
+            Click &#x21BB; to play again or try a different board size.
+        </p>
+        <div>&#x2573</div>
+    </div>
+</body>
+</html>
